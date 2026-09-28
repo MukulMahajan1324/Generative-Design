@@ -1,24 +1,26 @@
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
+const BASE = (import.meta.env?.BASE_URL || './').replace(/\/+$/, '') + '/';
+
 const FLORA_GREEN = [
-  '/flowers/green/abstract_flora_1_green.avif',
-  '/flowers/green/abstract_flora_2_green.avif',
-  '/flowers/green/abstract_flora_3_green.avif',
-  '/flowers/green/abstract_flora_4_green.avif',
-  '/flowers/green/abstract_flora_5_green.avif',
-  '/flowers/green/abstract_flora_6_green.avif',
-  '/flowers/green/abstract_flora_7_green.avif',
+  `${BASE}flowers/green/abstract_flora_1_green.avif`,
+  `${BASE}flowers/green/abstract_flora_2_green.avif`,
+  `${BASE}flowers/green/abstract_flora_3_green.avif`,
+  `${BASE}flowers/green/abstract_flora_4_green.avif`,
+  `${BASE}flowers/green/abstract_flora_5_green.avif`,
+  `${BASE}flowers/green/abstract_flora_6_green.avif`,
+  `${BASE}flowers/green/abstract_flora_7_green.avif`,
 ];
 
 const FLORA_GREENBLUE = [
-  '/flowers/greenblue/abstract_flora_1_greenblue.avif',
-  '/flowers/greenblue/abstract_flora_2_greenblue.avif',
-  '/flowers/greenblue/abstract_flora_3_greenblue.avif',
-  '/flowers/greenblue/abstract_flora_4_greenblue.avif',
-  '/flowers/greenblue/abstract_flora_5_greenblue.avif',
-  '/flowers/greenblue/abstract_flora_6_greenblue.avif',
-  '/flowers/greenblue/abstract_flora_7_greenblue.avif',
+  `${BASE}flowers/greenblue/abstract_flora_1_greenblue.avif`,
+  `${BASE}flowers/greenblue/abstract_flora_2_greenblue.avif`,
+  `${BASE}flowers/greenblue/abstract_flora_3_greenblue.avif`,
+  `${BASE}flowers/greenblue/abstract_flora_4_greenblue.avif`,
+  `${BASE}flowers/greenblue/abstract_flora_5_greenblue.avif`,
+  `${BASE}flowers/greenblue/abstract_flora_6_greenblue.avif`,
+  `${BASE}flowers/greenblue/abstract_flora_7_greenblue.avif`,
 ];
 
 export const DEFAULT_SHADER_CONFIG = {
